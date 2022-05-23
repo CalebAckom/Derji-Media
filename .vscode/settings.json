@@ -1,0 +1,5 @@
+{
+    "codedeploy.region": "eu-west-1",
+    "codedeploy.applicationName": "pmmd",
+    "codedeploy.isApplicationWorkspace": true
+}
