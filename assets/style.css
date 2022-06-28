@@ -394,6 +394,50 @@ blockquote span {
     text-transform: uppercase;
 }
 
+/* Blog HTML */
+/* Section Four */
+.section-four {
+    margin: 40px 0;
+}
+
+.blog {
+    margin: 40px 0;
+}
+
+.blog_content {
+    padding: 25px;
+    background: #f7f7f7;
+}
+
+.blog span {
+    display: block;
+}
+
+.badge {
+    background: var(--lightGreen);
+    width: 140px;
+    border-radius: 5px;
+    padding: 5px 0;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.misc-info {
+    font-style: 14px;
+    color: var(--dark);
+    margin-top: 16px;
+}
+
+.blog-title {
+    font-style: 20px;
+    font-weight: 900;
+}
+
+.blog-text {
+    font-weight: 300;
+}
+
 /* Footer */
 .footer {
     background: var(--dark);
@@ -474,6 +518,13 @@ blockquote span {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Section Four */
+    .blog-wrapper-sm {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -547,6 +598,13 @@ blockquote span {
         margin-top: 0;
     }
 
+    /* Section Four */
+    .blog-wrapper-lg {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
     /* Footer */
     .footer-container {
         display: grid;
@@ -566,6 +624,13 @@ blockquote span {
     /* Section Three */
     .gallery {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    /* Section Four */
+    .blog-wrapper-sm {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
