@@ -438,6 +438,73 @@ blockquote span {
     font-weight: 300;
 }
 
+/* Contact HTML */
+/* Section Five */
+.section-five {
+    margin: 40px 0;
+}
+
+.section-five .container div {
+    margin: 20px 0;
+}
+
+.contact-top {
+    text-align: center;
+}
+
+.contact-top h3 {
+    font-style: 28px;
+}
+
+.contact-top p {
+    font-weight: 300;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.contact-middle div {
+    text-align: center;
+    padding: 25px 0;
+    background: var(--dark);
+    color: #fff;
+}
+
+.contact-middle div span {
+    display: block;
+}
+
+.contact-icon {
+    font-style: 30px;
+}
+
+.contact-middle div span:nth-child(2) {
+    font-style: 18px;
+    font-weight: bold;
+}
+
+.contact-middle div p {
+    font-weight: 300;
+    opacity: 0.7;
+}
+
+.contact-bottom {
+    margin-top: 50px !important;
+}
+
+.form input[type = "text"], .form input[type = "email"], .form textarea {
+    width: 100%;
+    font-style: 16px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: 1px solid var(--lightGreen);
+    outline: none;
+    border-radius: 5px; 
+}
+
+.contact-bottom .form {
+    padding: 0 20px;
+}
+
 /* Footer */
 .footer {
     background: var(--dark);
@@ -507,6 +574,15 @@ blockquote span {
 }
 
 /* Media Queries */
+@media screen and (min-width: 678px) {
+    /* Section Five */
+    .contact-middle {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+    }
+}
+
 @media screen and (min-width: 800px) {
     /* Section Two */
     .insta-imgs {
@@ -578,6 +654,17 @@ blockquote span {
 
     .search-icon i:hover {
         transform: scale(1.2);
+    }
+
+    /* Section Five */
+    .contact-middle {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .contact-bottom {
+        display: grid;
+        /* grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 40px; */
     }
 }
 
